@@ -1,4 +1,4 @@
-@media screen and (max-width: 1400px) {
+/* @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
     margin-bottom: 6rem;
@@ -101,3 +101,120 @@
     text-align: justify;
   }
 }
+ */
+
+
+@media only screen and (max-width: 575.98px) {
+    /* Adjust font sizes to be smaller */
+    body {
+        font-size: 14px;
+    }
+
+    /* Stack elements vertically, like navigation links */
+    nav ul {
+        flex-direction: column;
+    }
+
+    /* Adjust padding and margins to be smaller */
+    .container {
+        padding: 10px;
+    }
+
+    /* Make images smaller or adjust their layout */
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Hide certain non-critical elements to save space */
+    .sidebar {
+        display: none;
+    }
+}
+
+/* Small Devices (Portrait Tablets and Large Phones, 576px and up) */
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+    body {
+        font-size: 15px;
+    }
+
+    /* Adjust layouts slightly from the smallest size */
+    .container {
+        padding: 15px;
+    }
+
+    /* Maybe start introducing multicolumn layouts */
+    .column {
+        flex: 1;
+    }
+
+    .sidebar {
+        display: block;
+    }
+}
+
+/* Medium Devices (Landscape Tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    body {
+        font-size: 16px;
+    }
+
+    /* Further adjust layouts for larger screens */
+    .container {
+        padding: 20px;
+    }
+
+    .column {
+        flex: 1;
+    }
+
+    /* Perhaps adjust navigation to be horizontal */
+    nav ul {
+        flex-direction: row;
+    }
+}
+
+/* Large Devices (Laptops/Desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+    body {
+        font-size: 18px;
+    }
+
+    /* Layouts can be more spacious */
+    .container {
+        padding: 30px;
+    }
+
+    .column {
+        flex: 1;
+    }
+
+    /* Adjusting image sizes and layouts for larger screens */
+    img {
+        max-width: 50%;
+    }
+}
+
+/*Extra Large Devices (Large Laptops and Desktops, 1200px and up)  */
+
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
+
+    .container {
+        padding: 40px;
+    }
+
+    .column {
+        flex: 1;
+    }
+
+    img {
+        max-width: 60%;
+    }
+}
+
+
+
