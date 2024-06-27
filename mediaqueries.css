@@ -1,6 +1,6 @@
 @media screen and (max-width: 1400px) {
   #profile {
-    height: 83vh;
+    /* height: 83vh; */
     margin-bottom: 6rem;
   }
   .about-containers {
@@ -50,10 +50,10 @@
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: 40vh;
+    height: 35vh;
   }
   #profile {
-    height: 83vh;
+    /* height: 83vh; */
     margin-bottom: 0;
   }
   article {
