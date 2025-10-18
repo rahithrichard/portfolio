@@ -37,3 +37,17 @@ window.addEventListener("scroll", reveal);
 
 // Call the reveal function on initial load
 reveal();
+
+var tags = ['Java', 'Python', '.Net']; // List of tags
+var currentIndex = 0;
+
+function updateDeveloperRole() {
+    currentIndex = (currentIndex + 1) % tags.length;
+    document.getElementById('developerRole').textContent = tags[currentIndex] + ' Developer';
+}
+
+// Start cycling through tags every 2 seconds
+var roleInterval = setInterval(updateDeveloperRole, 2000);
+
+// Optional: Clear interval if needed (e.g., when navigating away from the page)
+// clearInterval(roleInterval);
